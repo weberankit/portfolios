@@ -17,10 +17,10 @@ const Skill=()=>{
        
       
       {
-        mySkill.map((item)=>{
+        mySkill.map((item ,index)=>{
             return(
                 <>
-                <div className={` text-white font-bold text-sm w-28 sm:w-32 p-6  shadow-2xl ${item.clip} mb-10 animate-pulse md:animate-none bg-black`}> 
+                <div key={index} className={` text-white font-bold text-sm w-28 sm:w-32 p-6  shadow-2xl ${item.clip} mb-10 animate-pulse md:animate-none bg-black`}> 
        <svg xmlns="http://www.w3.org/2000/svg" viewBox={item.viewBox} fill={item.bg} className="p-2 w-10 sm:w-16 m-auto ">
        <path d={item.pathd}/></svg> 
          <p className="text-center">{item.text}</p>

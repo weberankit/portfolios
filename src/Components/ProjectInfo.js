@@ -3,38 +3,13 @@ const ProjectInfo=({data})=>{
     const{ videoId , title , description ,subDescription,firstBtn,secBtn,thirdBtn,fourthBtn} = data
     //console.log(videoId)
  
-/*
-let iframe = document.querySelectorAll('iframe');
-var iframes = document.querySelector('iframe');
-iframes.contentWindow.postMessage('{"method":"setMuted","params":true}', '*');
-if(iframe){
-iframe.forEach(iframe => {
-    // Check if the iframe has a content window
-    const contentWindow = iframe.contentWindow;
-    if (contentWindow) {
-        // Post a message to the iframe to mute the video (if supported)
-        contentWindow.postMessage('{"method":"setMuted","params":true}', '*');
-    }
-});
-}
-*/
 
 
 
 
 
-/*
-if(iframe){
-   */ 
-/*The postMessage method sends a message to the window of the target iframe. 
-The message is specified as the first argument and must be a string. In this case, 
-it's a JSON string representing an object with a method (setMuted) and parameters (true) to mute the video.
-The second argument '*' specifies the target origin that the message is intended for.
- Using '*' means the message is intended for any origin, allowing communication across origins. */
- /*
-iframe.contentWindow.postMessage('{"method":"setMuted","params":true}', '*');
-}
-*/
+
+
 
 
  return(
