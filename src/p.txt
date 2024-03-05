@@ -1,0 +1,192 @@
+{  /*  
+    <div className="w-3/4 m-auto">
+<div className="flex justify-around">
+<div>
+    
+   
+    <iframe
+        className="w-80"
+        src="https://geo.dailymotion.com/player/xqoji.html?video=x8tre5s&playlist=x86svc"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        title="Dailymotion video player – final-educatiion video"
+        frameBorder="0"
+        width="100%"
+        height="100%"
+      // style={{ width: '100%', height: '100%', position: 'absolute', left: '0px', top: '0px', overflow: 'hidden' }}
+      ></iframe>
+
+
+</div>
+
+
+
+<div className="text-white p-4 pt-0">
+    <div className=" font-bold text-2xl">PWA Netflix MultiLingual Frontend WEB App </div>
+    <div className="pt-2">
+    <h1 className="text-sm">Designed frontend Of Streaming PlatForm Like Netflix</h1>
+        <h1 className="text-xs">It translates dynamic data (Eng to Bhojpuri, Hindi 😊) directly coming from server....</h1>
+     
+ <div className="mt-2 pt-6 ">
+       <button className="bg-violet-800 p-3 py-2 rounded-xl text-sm m-2 ml-0">more Details</button>
+        <button className="bg-black p-3 py-2 rounded-xl text-sm m-2" >Github</button>
+        <button className="bg-black p-3 py-2 rounded-xl text-sm m-2" >Live</button>
+        <button className="bg-red-600 p-3 py-2 rounded-xl text-sm m-2">People-Reaction</button>
+    </div>
+
+    </div>
+   
+</div>
+</div>
+</div>
+
+
+//2nd
+
+<div className="w-3/4 m-auto  pt-32">
+<div className="flex justify-around">
+<div>
+    
+   
+    <iframe
+        className="w-80"
+        src="https://geo.dailymotion.com/player/xqoji.html?video=x8tre5s&playlist=x86svc"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        title="Dailymotion video player – final-educatiion video"
+        frameBorder="0"
+        width="100%"
+        height="100%"
+      // style={{ width: '100%', height: '100%', position: 'absolute', left: '0px', top: '0px', overflow: 'hidden' }}
+      ></iframe>
+
+
+</div>
+
+
+
+<div className="text-white p-4 pt-0">
+    <div className=" font-bold text-2xl">PWA Netflix MultiLingual Frontend WEB App </div>
+    <div className="pt-2">
+    <h1 className="text-sm">Designed frontend Of Streaming PlatForm Like Netflix</h1>
+        <h1 className="text-xs">It translates dynamic data (Eng to Bhojpuri, Hindi 😊) directly coming from server....</h1>
+     
+ <div className="mt-2 pt-6 ">
+       <button className="bg-violet-800 p-3 py-2 rounded-xl text-sm m-2 ml-0">more Details</button>
+        <button className="bg-black p-3 py-2 rounded-xl text-sm m-2" >Github</button>
+        <button className="bg-black p-3 py-2 rounded-xl text-sm m-2" >Live</button>
+        <button className="bg-red-600 p-3 py-2 rounded-xl text-sm m-2">People-Reaction</button>
+    </div>
+
+    </div>
+   
+</div>
+</div>
+</div>
+
+{
+    //3rd
+}
+
+<div className="w-3/4 m-auto pt-32">
+<div className="flex justify-around">
+<div>
+    
+   
+    <iframe
+        className="w-80"
+        src="https://geo.dailymotion.com/player/xqoji.html?video=x8tre5s&playlist=x86svc"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        title="Dailymotion video player – final-educatiion video"
+        frameBorder="0"
+        width="100%"
+        height="100%"
+      // style={{ width: '100%', height: '100%', position: 'absolute', left: '0px', top: '0px', overflow: 'hidden' }}
+      ></iframe>
+
+
+</div>
+
+
+
+<div className="text-white p-4 pt-0">
+    <div className=" font-bold text-2xl">PWA Netflix MultiLingual Frontend WEB App </div>
+    <div className="pt-2">
+    <h1 className="text-sm">Designed frontend Of Streaming PlatForm Like Netflix</h1>
+        <h1 className="text-xs">It translates dynamic data (Eng to Bhojpuri, Hindi 😊) directly coming from server....</h1>
+     
+ <div className="mt-2 pt-6 ">
+       <button className="bg-violet-800 p-3 py-2 rounded-xl text-sm m-2 ml-0">more Details</button>
+        <button className="bg-black p-3 py-2 rounded-xl text-sm m-2" >Github</button>
+        <button className="bg-black p-3 py-2 rounded-xl text-sm m-2" >Live</button>
+        <button className="bg-red-600 p-3 py-2 rounded-xl text-sm m-2">People-Reaction</button>
+    </div>
+
+    </div>
+   
+</div>
+</div>
+</div>
+
+*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="E-commerce" /><meta itemprop="description" content="This is for learning" /><meta itemprop="uploadDate" content="2024-03-03T09:06:40.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp-tS1bv5eXvHm3AJ/x180" /><meta itemprop="duration" content="P77S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8trhek" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=x8trhek&playlist=" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – E-commerce" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+
+
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="food web" /><meta itemprop="description" content="This is food web build for learning purpose" /><meta itemprop="uploadDate" content="2024-03-03T09:19:35.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp_5G1bv5e3lU5cz-/x180" /><meta itemprop="duration" content="P169S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34&playlist=x86svc" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – food web" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+
+
+
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="food web" /><meta itemprop="description" content="This is food web build for learning purpose" /><meta itemprop="uploadDate" content="2024-03-03T09:19:35.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp_5G1bv5e3lU5cz-/x180" /><meta itemprop="duration" content="P169S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34&playlist=x86svc" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – food web" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="E-commerce" /><meta itemprop="description" content="This is for learning" /><meta itemprop="uploadDate" content="2024-03-03T09:06:40.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp-tS1bv5eXvHm3AJ/x180" /><meta itemprop="duration" content="P77S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8trhek" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=x8trhek&playlist=x86svc" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – E-commerce" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="youtube" /><meta itemprop="description" content="For development" /><meta itemprop="uploadDate" content="2024-03-03T09:16:34.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp-yg1bv5dyCjiQzc/x180" /><meta itemprop="duration" content="P304S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8trhnu" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=x8trhnu&playlist=x86svc" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – youtube" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="food web" /><meta itemprop="description" content="This is food web build for learning purpose" /><meta itemprop="uploadDate" content="2024-03-03T09:19:35.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp_5G1bv5e3lU5cz-/x180" /><meta itemprop="duration" content="P169S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34&playlist=x86svc" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – food web" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+
+<div itemscope itemtype="https://schema.org/VideoObject" style="position:relative;padding-bottom:56.25%;"><meta itemprop="name" content="food web" /><meta itemprop="description" content="This is food web build for learning purpose" /><meta itemprop="uploadDate" content="2024-03-03T09:19:35.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/Vp_5G1bv5e3lU5cz-/x180" /><meta itemprop="duration" content="P169S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xqoji.html?video=x8tri34" /><iframe src="https://geo.dailymotion.com/player/xqoji.html?video=&playlist=x86svc" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Dailymotion video player – food web" frameborder="0" width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+x8trhek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
