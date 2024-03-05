@@ -48,15 +48,15 @@ const Body=()=>{
             <h1 className="p-2 px-6 font-bold">ChatGpt <span className="text">3.5</span></h1>
         </div>
 
-         <div className="flex justify-center flex-col">
-            <div className="pt-36 flex flex-col justify-center">
+         <div className="flex justify-center flex-col ">
+            <div className="pt-52 lg:pt-36 flex flex-col justify-center">
 
                <div className=""> <img className="w-9  bg-white rounded-md  m-auto" src="gpt.png" alt='img-of-gpt'></img> </div>
                <div> <h2 className="text-white font-bold text-xl pt-4 text-center">How can I help you today ?</h2></div>
 
             </div>
              
-        <div className="text-white flex flex-col justify-center  m-auto md:m-20 mb-6  md:mb-0 ">
+        <div className="text-white flex flex-col justify-center  m-auto md:m-20 mb-6  md:mb-0 pt-24 lg:pt-0">
 
           <div className="flex flex-col md:flex-row justify-center pt-8 md:pt-0">
         <Link to={"/project"}> <div className=" w-72 mb-2 md:mb-0  p-1 px-4 pr-32 border  rounded-xl bordergpt  text-xs sm:text-sm gpthead hover:bg-[#424242] hover:cursor-pointer ">check my project <h5 className="text-xs gpt">just click one time</h5>  </div> </Link> 
