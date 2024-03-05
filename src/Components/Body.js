@@ -58,12 +58,12 @@ const Body=()=>{
              
         <div className="text-white flex flex-col justify-center   md:m-20 mb-6  md:mb-0 pt-24 lg:pt-0">
 
-          <div className="w-full flex flex-col md:flex-row justify-center pt-8 md:pt-0">
-        <Link to={"/project"}> <div className="w-full md:w-72 mb-2 md:mb-0  p-1 px-4 pr-32 border  rounded-xl bordergpt  text-base sm:text-sm gpthead hover:bg-[#424242] hover:cursor-pointer ">check my project <h5 className="text-xs gpt">just click one time</h5>  </div> </Link> 
+          <div className="m-2 lg:m-0 w-full flex flex-col md:flex-row justify-center pt-8 md:pt-0">
+        <Link to={"/project"}> <div className=" w-full md:w-72 mb-2 md:mb-0  p-1 px-4 pr-32 border  rounded-xl bordergpt  text-base sm:text-sm gpthead hover:bg-[#424242] hover:cursor-pointer ">check my project <h5 className="text-xs gpt">just click one time</h5>  </div> </Link> 
        <Link to={"contact"}>   <div className="ml-0 md:ml-2 w-full md:w-72 p-1 px-4 pr-32 border  rounded-xl bordergpt  text-base sm:text-sm gpthead hover:bg-[#424242] hover:cursor-pointer  ">contact me  <h5 className="text-xs gpt">to know about me</h5>    </div></Link>
           </div>
 
-          <div className="w-full flex flex-col md:flex-row justify-center  pt-2">
+          <div className="m-2 mt-0 lg:m-0 w-full flex flex-col md:flex-row justify-center  pt-2">
          <Link to={"/skill"}><div className="w-full md:w-72 mb-2 md:mb-0 p-1 px-4 pr-32 border  rounded-xl bordergpt  text-base sm:text-sm gpthead hover:bg-[#424242] hover:cursor-pointer ">check my skill <h5 className="text-xs gpt">top-notch skill</h5></div></Link> 
           <div className="hidden sm:block ml-0 md:ml-2 w-full md:w-72 p-1 px-4 pr-32 border  rounded-xl bordergpt  text-base sm:text-sm gpthead hover:bg-[#424242] hover:cursor-not-allowed ">upcoming Event <h5 className="text-xs gpt">planning for upcoming  </h5></div>
           </div>
@@ -71,7 +71,7 @@ const Body=()=>{
         </div>
 
 
-        <div className="media text-center mb-7  bg-[#212121] border bordergpt  w-4/5 sm:w-1/2 m-auto rounded-l-2xl rounded-r-2xl mt-0 sm:mt-16">
+        <div className="media text-center mb-7  bg-[#212121] border bordergpt  w-full sm:w-1/2 m-auto rounded-l-2xl rounded-r-2xl mt-0 sm:mt-16">
 
   
 
