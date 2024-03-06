@@ -7,7 +7,8 @@ const Contact=()=>{
 <div className="text-white">
     <div className="flex justify-center flex-col m-auto w-3/4 ">
         <div className="pt-24"><img className="w-40 rounded-3xl" src="Ankitkr.jpg" alt="userimg"></img>
-         <p className="p-2 font-bold ">Hi,I am  Ankit Kumar</p>
+         <p className="p-2 pb-0 font-bold ">Hi,I am  Ankit Kumar</p>
+         <h4>😊💼 💖 to - FreeLance | Frontend-Work | Open Source</h4>
          </div>
        <div><h1 className="w-3/4 text-sm font-semibold">I believe 🚀frontend engineering is not limited to JS or ⚛️React, but it has much more, such as security, web accessibility, 
         optimization, and lots more. I'm eager to solve real-world🌐 tech issues. </h1></div>

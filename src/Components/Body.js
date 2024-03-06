@@ -6,13 +6,19 @@ import { Link } from 'react-router-dom';
 const Body=()=>{
     const [name, setName] = useState('');
     const [msg, setMsg] = useState("");
+    let firstInterval;
+    let secondInterval
     const handleSubmit = async (e) => {
         e.preventDefault();
         setName("")
-        setMsg("Successfully message sent")
-        setTimeout(()=>{
+     firstInterval=   setTimeout(()=>{
+          setMsg("Successfully message sent")
+      secondInterval=    setTimeout(()=>{
           setMsg("")
         },3000)
+        },1000)
+       
+        
        try {
        const res=await fetch('https://formsubmit.co/ajax/singhankit919955@gmail.com', {
             method: 'POST',
@@ -26,11 +32,15 @@ const Body=()=>{
       into a JavaScript object,
        and JSON.stringify() converts this object into a JSON string suitable 
        for sending via a network request.  */
-       
-       
+       clearInterval(firstInterval)
+       clearInterval(secondInterval)
+       //if clearinterval clear it before executing so to prevent we again using clearinterval
+       setMsg("")
         } catch (error) {
           console.error('Error submitting messages sorry:', error);
           setMsg(error)
+          clearInterval(firstInterval)
+          clearInterval(secondInterval)
         }
      
         
