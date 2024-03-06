@@ -1,6 +1,7 @@
  export const myProject  = [
 
 {videoId:"x8tre5s",
+playId:"x86svc",
 title:"PWA Netflix MultiLingual Frontend WEB App",
 description:"build the 🗼 frontend Of Streaming PlatForm Like Netflix",
 subDescription:"It translates dynamic data (Eng to Bhojpuri, Hindi 😊) directly coming from server....",
@@ -11,6 +12,7 @@ fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073
 },
 
 {videoId:"x8trhnu",
+playId:"x873qo",
 title:"Video Streaming Platform Like YT",
 description:"build the 🔥 N-level nested reply and comments ",
 subDescription:"Search cache with debouncing (advance features like youtube) and QR code....",
@@ -23,6 +25,7 @@ fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7121707045862440
 
 
 {videoId:"x8tri34",
+playId:"x873qk",
 title:"Location-wise - Foody-order-",
 description:"Render list 🚀  on the basis of user location co-ordinates",
 subDescription:" chunking,code splitting,dynamic rendering,and bundling📌 Lazy loading...",
@@ -32,6 +35,7 @@ thirdBtn:"https://profoodyank.netlify.app/",
 fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7103294244844371969?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3B2ZhRzNnjRbWz9ZQgVcxV6g%3D%3D"
 },
 {videoId:"x8trhek",
+playId:"x873py",
 title:"Framework and Library Independence Ecommerce",
 description:"Users can  🎯 add and remove  items to/from their wishlist",
 subDescription:" Users have the ability to directly add items to their cart.Large Size Item Viewing:...",

@@ -1,6 +1,6 @@
 
 const ProjectInfo=({data})=>{
-    const{ videoId , title , description ,subDescription,firstBtn,secBtn,thirdBtn,fourthBtn} = data
+    const{ videoId , playId , title , description ,subDescription,firstBtn,secBtn,thirdBtn,fourthBtn} = data
     //console.log(videoId)
  
 
@@ -21,9 +21,9 @@ const ProjectInfo=({data})=>{
    
     <iframe
        
-        className="w-80"
-        src={`https://geo.dailymotion.com/player/xqoji.html?video=${videoId }&playlist=x86svc&mute=true`}
-        allow="autoplay; fullscreen; picture-in-picture"
+        className="w-80 rounded-2xl shadow-lg hover:cursor-pointer"
+        src={`https://geo.dailymotion.com/player/xqoji.html?video=${videoId }&playlist=${playId}&mute=true&loop=true`}
+       allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen
         title="Dailymotion video player – final-educatiion video"
         frameBorder="0"
