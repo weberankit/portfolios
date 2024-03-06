@@ -20,7 +20,7 @@ const Body=()=>{
        
         
        try {
-       const res=await fetch('https://formsubmit.co/ajax/singhankit919955@gmail.com', {
+       const res=await fetch('https://formsubmit.co/ajax/codingank@gmail.com', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
