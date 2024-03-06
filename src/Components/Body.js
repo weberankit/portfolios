@@ -19,7 +19,7 @@ const Body=()=>{
         },1000)
        
         
-       try {
+       
        const res=await fetch('https://formsubmit.co/ajax/codingank@gmail.com', {
             method: 'POST',
             headers: {
@@ -36,13 +36,7 @@ const Body=()=>{
        clearInterval(secondInterval)
        //if clearinterval clear it before executing so to prevent we again using clearinterval
        setMsg("")
-        } catch (error) {
-          console.error('Error submitting messages sorry:', error);
-          setMsg(error)
-          clearInterval(firstInterval)
-          clearInterval(secondInterval)
-        }
-     
+        
         
         
       };
