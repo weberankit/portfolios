@@ -11,7 +11,7 @@ thirdBtn:"https://ainetflixpwa.netlify.app/",
 fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073664?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BPIap8tSvSTuxeXfrHkCvGQ%3D%3D"
 },
 
-{videoId:"x8trhnu",
+{videoId:"x8urysk",
 playId:"x873qo",
 title:"Video Streaming Platform Like YT",
 description:"build the 🔥 N-level nested reply and comments ",
