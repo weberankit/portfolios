@@ -1,5 +1,20 @@
  export const myProject  = [
 
+    {videoId:"x8yrp6m",
+    playId:"x8cx20",
+    title:"Daily-Life PDF/Text Problem Solver AiSummarization, Dictionary, Translate 📑",
+    description:"whenever you get stuck, simply select the text and ask AI for help, look it up in the dictionary, or translate it instantly.",
+    subDescription:"This is not a clone project. ,When I was in my 2nd year of college🏫, I had the idea 💡 to build this, but at that time, I didn't have enough knowledge📖.Finally, my dreams come true. USED FIREBASE FOR BACKEND AND REACTJS FRONTEND",
+    firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
+    secBtn:"https://github.com/weberankit/AiPdf",
+    thirdBtn:"https://aipdf.ankitkr.in/",
+    fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D"
+    },
+
+
+
+
+
 {videoId:"x8tre5s",
 playId:"x86svc",
 title:"PWA Netflix MultiLingual Frontend WEB App",
