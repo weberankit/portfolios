@@ -8,8 +8,28 @@
     firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
     secBtn:"https://github.com/weberankit/AiPdf",
     thirdBtn:"https://aipdf.ankitkr.in/",
-    fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D"
-    },
+    fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
+    detailStack:"Reactjs   Gemini API  Microsoft API  Translate API firebase   TailwindCss   ReduxToolkit   React-router-dom ",
+    detailinfo:` 'AiPdf' : Developed an innovative web app providing unique AI-driven functionalities including text summarization, dictionary definitions, and language translation within PDF documents Features:
+
+AiSearch: Easy search functionality just select text and also you can ask follow-up questions. 🔍❓ 
+
+ASK Dictionary 📙: Understands five words simultaneously. 📚🔤
+
+Translation🈂: Supports multiple languages. 🌐🗣️
+
+Share 🔁: Send search data to your email id. 📧
+
+Highlight 🖍️ download: Download highlighted text. 📥
+
+Support: different languages 🌎
+
+Free: 🤩 as You can use your key to run this web functionalities, it's 100% free 💰🔑
+🌏 🚀It supports different languages like Hindi, Bhojpuri, French, German, and English.
+
+🌙🚀 Dark mode is also enabled.`
+
+},
 
 
 
@@ -23,7 +43,35 @@ subDescription:"It translates dynamic data (Eng to Bhojpuri, Hindi 😊) directl
 firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073664?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BBPhm87xeTiyBrf0FJnYXAA%3D%3D",
 secBtn:"https://github.com/weberankit/AINetflix",
 thirdBtn:"https://ainetflixpwa.netlify.app/",
-fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073664?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BPIap8tSvSTuxeXfrHkCvGQ%3D%3D"
+fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073664?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BPIap8tSvSTuxeXfrHkCvGQ%3D%3D",
+detailStack:" PWA  TMDB API  Reactjs  FireBase   Router",
+detailinfo:` 'PWANetflix' : Created a web app displaying movie information and trailers using
+React.js and Redux Toolkit.  Multilingual: It translates dynamic data (Eng to Bhojpuri, Hindi 😊)
+ 
+📌 PWA: It can be installed on any device such as the Microsoft Store, Play Store, or any other.
+📌 Offline: It also supports offline mode as data is cached.
+📌 Prevention 🔥 from unwanted API calls.
+📌 Reusability: The same components are used as standard practice.
+📌 Standard code: The code follows standard practices.
+📌Login with Google.
+📌Categorizing movies using TMDB movies.
+📌 On click, movie details and videos are fetched.
+
+🔑 Key features:
+
+🌕ChatGPT (OpenAI) API integrated with TMDB data to fetch movies.
+🌕Login/logout integration with Firebase.
+🌕Skip option is also provided.
+🌕Add to screen pop-up on page refresh and "Do not show me again" 
+Movie actor names.
+🌕Fetching TMDB movie lists.
+
+💡 Supporting:
+
+Clean code.
+Prevention of unwanted API calls.
+Use of the same component.
+Code divided into chunks.`
 },
 
 {videoId:"x8urysk",
@@ -34,7 +82,35 @@ subDescription:"Search cache with debouncing (advance features like youtube) and
 firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7121707045862440960?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BDCHbhwDLRUuG130G1IQzzQ%3D%3D",
 secBtn:"https://github.com/weberankit/YTReact",
 thirdBtn:"https://anktube.netlify.app/",
-fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7121707045862440960?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BDCHbhwDLRUuG130G1IQzzQ%3D%3D"
+fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7121707045862440960?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BDCHbhwDLRUuG130G1IQzzQ%3D%3D",
+detailStack:"Youtube Api  Reactjs   SPA   Router ",
+detailinfo:` 'YouTube' : 🎇 What's new in this project❓ 🗼 How it is different from Real Youtube.
+
+🎯 But this one's different: ✌️
+
+🚀 Big thanks to Akshay Saini 🚀 and the NamasteDev.com course. I've not only learned from the course but also 📢 🚀 added some cool new features. 🎓🙌🚀
+
+Here's the Project Uniqueness:
+
+🔵 Added a QR code, making it a breeze to open videos on your phone by scanning. 📱🔓
+
+🔵 The most exciting part:
+
+📣 Now, you can reply and comment on nested comments of any depth, thanks to our recursive filtering. 🧩🔁
+
+✅ Some say DSA isn't that important, but trust me, it's been a challenge for me, a DSA newbie. 📚💪 It is important to know at least the basics. 
+
+Difficulty :
+Fail-😌
+I initially added replies directly to comments without IDs, and it worked. But in the console, it only displayed the value, not in the DOM – possibly due to complex nested comments. React does not re-render it. I tried everything to make it happen, but it didn't. 😓🔍
+
+Finally 😃
+So, I switched to Redux and adopted the ID value approach for adding comments. 🔄💬
+
+However, learning recursion took time, as I was not well-versed in it. After understanding it, I implemented 🚨 N-level recursive filtering 🚨 for adding replies to nested comments. 🧠🔄 (so that nested comments can be filtered and replies added to that particular comment, and also generated a unique ID for the reply comments for further comments)
+And voilà, it's done! 🎉
+
+`
 },
 
 
@@ -48,6 +124,31 @@ firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:71032942448443719
 secBtn:"https://github.com/weberankit/FOodyUpdate",
 thirdBtn:"https://profoodyank.netlify.app/",
 fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7103294244844371969?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3B2ZhRzNnjRbWz9ZQgVcxV6g%3D%3D"
+,
+detailStack:"Lication fetch API, Reactjs , tailwindcss",
+detailinfo:` 'FoodWeb' : 🗼BEST FEATURES OF MY FOODY WEB APP🗼 
+ 🚀Location-wise rendering of restaurant lists (state-wise)🚀
+ 
+🌈: It 📢renders restaurant lists on the basis of user location just by clicking the nearby button, and it will show restaurants in that city.
+
+🌈: If the user denies his location, the default Delhi restaurants list is going to be displayed there.
+
+🌈 If a Swiggiy-attached restaurant is not available at their location or is user-denied, then it will throw an alert msg and display the default one
+
+🌈 It even works on the phone, which was earlier not possible(API ISSUE FIXED).
+Before developing these features I 😦 thought it would not be possible to render the list on the basis of the location of the user from such very huge dynamic configuration data I have tried and it takes lots of time to do this but finally, it is done  😊 
+
+Special Thanks to Akshay Saini 🚀 because of him we are able to think of and able to do such features.
+ 👉🏻 Link to the website in the comment section
+ Note: I have checked this website in 3 different states with the help of my friends and it's working fine if you find any bugs then plz feel free to point them out as we are here to learn. 
+
+must read this:-
+🔴How do I render a list of data on the basis of user location?
+ ✔️uses user location latitudes and longitudes by using JS and an API for 
+ City names, After that, implemented this with the API of
+ Swiggy and also filtered cards that have a restaurant list. 
+
+`
 },
 {videoId:"x8trhek",
 playId:"x873py",
@@ -57,7 +158,11 @@ subDescription:" Users have the ability to directly add items to their cart.Larg
 firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7049217060089868288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BZ2ym9Sz0QIGddhwS0D744Q%3D%3D",
 secBtn:"https://github.com/weberankit/shopping.github.io",
 thirdBtn:"https://shopping-github-io-wibh.vercel.app/",
-fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7049217060089868288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BZ2ym9Sz0QIGddhwS0D744Q%3D%3D"
+fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7049217060089868288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BZ2ym9Sz0QIGddhwS0D744Q%3D%3D",
+detailStack:"Javascript   Dom manipulations   Css  Html",
+detailinfo:` 'Shopping' : I have created my own shopping cart website using JavaScript, HTML, and CSS from scratch. I made an effort to make it as dynamic as possible, and it is also responsive. This project includes local storage and has the option to log in and out. There are numerous choices available, including the ability to examine products in large-size mode and add items from the wishlist to the cart.
+`
+
 },
 
 

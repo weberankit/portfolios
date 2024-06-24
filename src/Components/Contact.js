@@ -8,15 +8,30 @@ const Contact=()=>{
     <div className="flex justify-center flex-col m-auto w-3/4 ">
         <div className="pt-24"><img className="w-40 rounded-3xl" src="Ankitkr.jpg" alt="userimg"></img>
          <p className="p-2 pb-0 font-bold ">Hi,I am  Ankit Kumar</p>
-         <h4>😊💼 💖 to - FreeLance | Frontend-Work | Open Source</h4>
+         <h4>😊💼 💖 to - FreeLance | Frontend-Work/job | Open Source</h4>
          </div>
        <div><h1 className="w-3/4 text-sm font-semibold">I believe 🚀frontend engineering is not limited to JS or ⚛️React, but it has much more, such as security, web accessibility, 
         optimization, and lots more. I'm eager to solve real-world🌐 tech issues. </h1></div>
 
      <div className="pt-5 font-semibold text-sm">
-        <p>What's new in my project? Lots of projects are available on YT or other platforms. </p>
-        <p className="text-xs md:text-sm">ans is Yes, you can get projects from anywhere, but <span className="font-semibold">in My Each Project, I have added unique features
-             and also focused much more on code quality. For example, check out my PWA Netflix project.</span></p>
+        <p className="font-extrabold font-sans">About my work: </p>
+       <p className="font-serif ">
+
+What's new in my project? Lots of projects are available
+
+🚀 I have built many projects; some solve real problems, and some are clones.
+📄 The AIPDF project is one of my best projects as it solves a real issue. It is the first web project to provide all these features.
+💡 In clone projects, I have added more features that are not present in the real projects. For example:
+📺 In my YouTube project, I added dummy comment features like Reddit, where users can reply to each nested level comment.
+🎬 In my Netflix clone project, I added PWA and multilingual features.
+🌟 I believe in being innovative, which is my motto.
+
+
+I love to deep dive into concepts.
+
+Technical skill: ReactJS, JavaScript , PWA( progressive web app) , TailwindCSS, CSS, HTML, Git
+
+</p>
      </div>
 
     <div className="pt-4">
