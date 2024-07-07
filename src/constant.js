@@ -42,7 +42,7 @@ description:"build the 🗼 frontend Of Streaming PlatForm Like Netflix",
 subDescription:"It translates dynamic data (Eng to Bhojpuri, Hindi 😊) directly coming from server....",
 firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073664?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BBPhm87xeTiyBrf0FJnYXAA%3D%3D",
 secBtn:"https://github.com/weberankit/AINetflix",
-thirdBtn:"https://ainetflixpwa.netlify.app/",
+thirdBtn:"https://ai-netflix.vercel.app/",
 fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7160861351161073664?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_multiple_media_viewer_details_modal%3BPIap8tSvSTuxeXfrHkCvGQ%3D%3D",
 detailStack:" PWA  TMDB API  Reactjs  FireBase   Router",
 detailinfo:` 'PWANetflix' : Created a web app displaying movie information and trailers using
