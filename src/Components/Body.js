@@ -1,12 +1,20 @@
 
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { useState,useEffect,useContext } from 'react';
+import { useState,useEffect,useContext,useRef } from 'react';
 import { Link } from 'react-router-dom';
 //import useFormSubmit from '../utils/useFormSubmit';
 import { myContext } from '../App';
+import {GenAi} from "../customHooks/GenAi"
+import { geminiPrompt } from './helper';
 const Body=()=>{
     const [name, setName] = useState('');
     const [msg, setMsg] = useState("");
+    const [data, setData] = useState([])
+    const [indicate ,setIndi] =useState(false)
+const userQuestion=`you have to Act like professional answer expert and answer this question ${name} from given information in bullet and also add emoji on front of bullet`
+//console.log(userQuestion)
+//to scroll to last response
+const scrollRef=useRef(null)
     let firstInterval;
     let secondInterval
     const handleSubmit = async (e) => {
@@ -53,12 +61,68 @@ let {img,setImgchange}=useContext(myContext) //note img:value
 useEffect(()=>{
   let timer=setInterval(()=>{
 setImgchange({value:"Ankitkr.jpg"})
-  },2000)
+  },1000)
 return()=>clearInterval(timer)
 },[])
 
+//for scrolling
+
+useEffect(()=>{
+  if (data?.length > 1 && scrollRef.current) {
+    // Scroll to the project element
+  scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+ console.log(scrollRef)
+  }
+},[data])
+
+//to ask ai
+const handleAsk=()=>{
+  console.log(name.trim().length)
+  if(name.trim().length==0){
+    alert("please ask question with complete sentence")
+    return
+  }
+console.log("let check")
+setIndi(true)
+GenAi(userQuestion,geminiPrompt,setData ,setIndi)
+//console.log(data)
+
+
+ setData((prev)=>{
+  return [...prev ,{ques:name}]
+ })
+ console.log(data,"data")
+}
   return(
         <>
+  { data?.length>0 &&    <div className=' p-2 fixed bg-[#212121] font-serif  h-96 overflow-y-scroll mx-auto w-full'>
+      <div className='w-full md:w-1/2 m-auto'>
+      {<button className='bg-red-600 rounded-lg text-white font-serif p-1 px-2 fixed' onClick={()=>setData([])}>close</button>}
+      {indicate && <div className='fixed bg-black rounded-2xl text-center font-bold text-white mt-2'>Fetching the data wait ....</div>}
+        {data && data.map((item, index) => {
+          return (
+            <div key={index}  className='mb-4 text-white '>
+              <span ref={index === data.length-1?scrollRef:null} className='text-right bg-[#2f2f2f] p-4 mb-2 rounded-md float-right clear-both project'>
+                {item.ques}
+              </span>
+              
+              <div style={{ 
+      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+      fontSize: '16px',
+      lineHeight: '28px',
+      fontWeight: 400
+    }} className='line-height-[28px] text-[16px] tracking-normal font-normal   text-left bg-[#2f2f2f] p-4 rounded-2xl float-left clear-both w-2/3'>
+                {item.ans}
+              </div>
+            
+            </div>
+          );
+        })}
+      </div>
+    </div>
+}
+
+
      <div className='text-lime-600  text-sm lg:text-base absolute top-6 right-[40%] p-10 '>{msg}</div>
         <div className=" text-lg text-white " >
             <h1 className="p-2 px-6 font-bold">ChatGpt <span className="text">3.5  </span></h1>
@@ -98,11 +162,11 @@ return()=>clearInterval(timer)
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder='Send Message directly to me (no emailId required)'
-          autoComplete="off"
+          placeholder='Ask me Anything About me '
+          autoComplete="on"
           required
         />
-        <button className=' bg-white p-3 mb-1 mt-1 rounded-xl hover:bg-black hover:text-white text-xs md:text-sm mr-0 md:mr-3 float-right ' type="submit">Send</button>
+        <button className=' bg-white p-3 mb-1 mt-1 rounded-xl hover:bg-black hover:text-white text-xs md:text-sm mr-0 md:mr-3 float-right ' type="submit" onClick={()=>handleAsk()}>Ask me</button>
       </form>
 
 </div>

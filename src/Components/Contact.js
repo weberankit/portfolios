@@ -20,7 +20,7 @@ const Contact=()=>{
 What's new in my project? Lots of projects are available
 
 🚀 I have built many projects; some solve real problems, and some are clones.
-📄 The AIPDF project is one of my best projects as it solves a real issue. It is the first web project to provide all these features.
+📄 The AIPDF project is one of my best projects as it solves a real issue. It is the first web project to provide all AiSummarization,dictionary and tanslate with custom api key.
 💡 In clone projects, I have added more features that are not present in the real projects. For example:
 📺 In my YouTube project, I added dummy comment features like Reddit, where users can reply to each nested level comment.
 🎬 In my Netflix clone project, I added PWA and multilingual features.
