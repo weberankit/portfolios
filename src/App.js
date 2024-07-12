@@ -9,6 +9,8 @@ import Error from "./Components/Error"
 import { useContext ,createContext,useState } from 'react';
 ///context is created
  export const myContext=createContext({value:"gpt.png"})
+
+
 function App() {
 //now acces context
 const context=useContext(myContext)
