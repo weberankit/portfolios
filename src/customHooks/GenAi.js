@@ -12,13 +12,13 @@ export const GenAi=(question,data,setData,setIndi)=>{
             const prompt = `
           ${question} ${data}
               `
-          console.log(prompt ,"prompt")
+          //console.log(prompt ,"prompt")
             const result = await model.generateContent(prompt);
             const response = await result.response;
             const text = response.text();
            setData((prev)=>[...prev,{ans:text}])
            setIndi(false)
-           console.log(text)
+        //   console.log(data,"ff")
           }catch(error){
            setData((prev)=>[...prev,{ans:"something went wrong please refresh page and if error continue then please inform me"}])
           }

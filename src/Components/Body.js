@@ -11,7 +11,12 @@ const Body=()=>{
     const [msg, setMsg] = useState("");
     const [data, setData] = useState([])
     const [indicate ,setIndi] =useState(false)
-const userQuestion=`you have to Act like professional answer expert and answer this question ${name} from given information in bullet and also add emoji on front of bullet`
+
+    const userQuestion=`you have to Act like professional answer expert and answer the question in 150 words  by using given information  and also add emoji in each line . Question:  ${name}`
+    
+
+
+
 //console.log(userQuestion)
 //to scroll to last response
 const scrollRef=useRef(null)
@@ -76,6 +81,8 @@ useEffect(()=>{
 },[data])
 
 //to ask ai
+//most important
+//for data what i have used that if property of onject is not avail it add in same array
 const handleAsk=()=>{
   console.log(name.trim().length)
   if(name.trim().length==0){
@@ -111,7 +118,7 @@ GenAi(userQuestion,geminiPrompt,setData ,setIndi)
       fontSize: '16px',
       lineHeight: '28px',
       fontWeight: 400
-    }} className='line-height-[28px] text-[16px] tracking-normal font-normal   text-left bg-[#2f2f2f] p-4 rounded-2xl float-left clear-both w-2/3'>
+    }} className='  line-height-[28px] text-[16px] tracking-normal font-normal   text-left bg-[#2f2f2f] p-4 rounded-2xl float-left clear-both w-2/3'>
                 {item.ans}
               </div>
             
