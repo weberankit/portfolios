@@ -7,7 +7,13 @@ import Skill from './Components/Skill';
 import Contact from './Components/Contact';
 import Error from "./Components/Error"
 import { useContext ,createContext,useState } from 'react';
+import { Provider } from 'react-redux';
+import AppSlice from './utils/AppSlice';
 ///context is created
+
+
+
+
  export const myContext=createContext({value:"gpt.png"})
 
 
@@ -45,10 +51,12 @@ let [imgChange , setImgchange] = useState(context) /// value:"gpt.png"
 
   return (
    <>
+   <Provider store={AppSlice}>
    <myContext.Provider value={{img:imgChange,setImgchange}}> {/*img:value */}
    <RouterProvider router={routing}/>
    
    </myContext.Provider>
+   </Provider>
    </>
   );
 }

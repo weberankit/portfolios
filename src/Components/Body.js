@@ -1,64 +1,79 @@
 
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { useState,useEffect,useContext,useRef } from 'react';
+import { useState,useEffect,useContext,useRef,useCallback } from 'react';
 import { Link } from 'react-router-dom';
 //import useFormSubmit from '../utils/useFormSubmit';
 import { myContext } from '../App';
 import {GenAi} from "../customHooks/GenAi"
-import { geminiPrompt } from './helper';
+//import { geminiPrompt } from './helper';
+import { question } from '../constantCategory';
+import RenderAiText from './RenderAiText';
+import { addData, addQuestion } from '../utils/DataSlice';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+
+
 const Body=()=>{
-    const [name, setName] = useState('');
+   // const [name, setName] = useState('');
     const [msg, setMsg] = useState("");
-    const [data, setData] = useState([])
+  //  const [data, setData] = useState([])
     const [indicate ,setIndi] =useState(false)
-
-    const userQuestion=`you have to Act like professional answer expert and answer the question in 150 words  by using given information  and also add emoji in each line . Question:  ${name}`
+    const [error,setError] = useState(null)
     
-
+const dispatch=useDispatch()
+const userInput = useRef(null)
 
 
 //console.log(userQuestion)
 //to scroll to last response
 const scrollRef=useRef(null)
+const selectData=useSelector((store)=>store.dataSlice.value)
+//console.log(selectData)
+const selectQuestion=useSelector((store)=>store.dataSlice.question)
+
+
+
     let firstInterval;
     let secondInterval
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setName("")
-     firstInterval=   setTimeout(()=>{
-          setMsg("Successfully message sent")
-      secondInterval=    setTimeout(()=>{
-          setMsg("")
-        },3000)
-        },1000)
-       //JSON.stringify(Object.fromEntries(new FormData(e.target)))
-     //    const val=document.querySelector(".met")
-       //  console.log(val,val.textContent)
-       //  let str=val.textContent
-           //  console.log(e.target.value)
-       const res=await fetch('https://formsubmit.co/ajax/codingank@gmail.com', {
-            method: 'POST',
-          
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body:JSON.stringify(Object.fromEntries(new FormData(e.target)))
-          });
 
 
-      /*Object.fromEntries(new FormData(e.target)) gathers form data 
-      into a JavaScript object,
-       and JSON.stringify() converts this object into a JSON string suitable 
-       for sending via a network request.  */
-       clearInterval(firstInterval)
-       clearInterval(secondInterval)
-       //if clearinterval clear it before executing so to prevent we again using clearinterval
-       setMsg("")
-        
-        
-        
+      const handleSubmit = (text)=>{ 
+        async function call() {
+        const userText = text;
+        //console.log(userText,"lion")
+        // Create a FormData object and append the user input
+      //  const formData = new FormData();
+       // formData.append('data', userText); // 'data' is the key for the form field
+      
+        firstInterval = setTimeout(() => {
+          setMsg("Ankit will receive your question");
+          secondInterval = setTimeout(() => {
+            setMsg("");
+          }, 3000);
+        }, 700);
+      
+        // Convert the FormData object to a plain object
+       /* const dataObject = {};
+        formData.forEach((value, key) => {
+          dataObject[key] = value;
+        });*/
+      
+        // Send the form data as JSON
+        const res = await fetch('https://formsubmit.co/ajax/codingank@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({data:text})
+        });
+      
+        clearInterval(firstInterval);
+        clearInterval(secondInterval);
+        setMsg("");
       };
+       call()
+    }
       //grab img and update function so we can update img
 let {img,setImgchange}=useContext(myContext) //note img:value
 
@@ -67,79 +82,102 @@ useEffect(()=>{
   let timer=setInterval(()=>{
 setImgchange({value:"Ankitkr.jpg"})
   },1000)
-return()=>clearInterval(timer)
+
+  window.addEventListener("keydown",keypressed)
+
+return()=>{clearInterval(timer);window.removeEventListener("keyup",keypressed)}
+
 },[])
 
 //for scrolling
-
+/**/
 useEffect(()=>{
-  if (data?.length > 1 && scrollRef.current) {
+  if (selectQuestion?.length > 1 && scrollRef.current) {
     // Scroll to the project element
   scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
- console.log(scrollRef)
+
+// 
   }
-},[data])
+
+
+},[selectQuestion?.length,selectData?.length])
 
 //to ask ai
-//most important
-//for data what i have used that if property of onject is not avail it add in same array
+
+
+
+
 const handleAsk=()=>{
-  console.log(name.trim().length)
-  if(name.trim().length==0){
-    alert("please ask question with complete sentence")
+ // console.log(userInput.current.value.trim().length)
+  if(userInput?.current?.value.trim().length==0){
+    alert("please ask question ")
     return
   }
-console.log("let check")
+  handleSubmit(userInput.current.value);
+//console.log(userInput.current.value)
+dispatch(addQuestion(userInput.current.value))
 setIndi(true)
-GenAi(userQuestion,geminiPrompt,setData ,setIndi)
-//console.log(data)
+GenAi(question,userInput,setIndi,setError, dispatch,addData)
 
 
- setData((prev)=>{
-  return [...prev ,{ques:name}]
- })
- console.log(data,"data")
+
+
+
+ }
+ 
+
+function keypressed(e){
+   if(e.key === 'Enter' && userInput?.current?.value){
+    handleAsk()
+  }
 }
+
   return(
         <>
-  { data?.length>0 &&    <div className=' p-2 fixed bg-[#212121] font-serif  h-96 overflow-y-scroll mx-auto w-full'>
-      <div className='w-full md:w-1/2 m-auto'>
-      {<button className='bg-red-600 rounded-lg text-white font-serif p-1 px-2 fixed' onClick={()=>setData([])}>close</button>}
-      {indicate && <div className='fixed bg-black rounded-2xl text-center font-bold text-white mt-2'>Fetching the data wait ....</div>}
-        {data && data.map((item, index) => {
+  { selectQuestion?.length>0 && <>   <div  className={`  p-2 fixed bg-[#212121] font-serif  h-96 overflow-y-scroll mx-auto w-full`}>
+      <div className='w-full md:w-1/2 m-auto ' >
+      {<button className='bg-red-600 rounded-lg text-white font-serif p-1 px-2 fixed' onClick={()=>{dispatch(addQuestion("close"));dispatch(addData("close"))}}>close</button>}
+      {indicate && <div className='fixed bg-black rounded-2xl text-center font-bold text-white mt-2'>Ai Fetching the data wait ....</div>}
+      {error && <div className='fixed bg-black rounded-t-xl rounded-b-lg text-sm text-center  text-white mt-2 p-1 py-2'> <div className="text-black p-1 rounded-lg float-right bg-white hover:bg-gray-600 hover:cursor-pointer" onClick={()=>setError(null)}>close</div>{error}</div>}
+        {selectQuestion && selectQuestion.map((item, index) => {
+         
           return (
             <div key={index}  className='mb-4 text-white '>
-              <span ref={index === data.length-1?scrollRef:null} className='text-right bg-[#2f2f2f] p-4 mb-2 rounded-md float-right clear-both project'>
-                {item.ques}
+              <span  className='text-right bg-[#2f2f2f] p-4 mb-2 rounded-md float-right clear-both project'>
+                {item}{index === selectQuestion?.length-1 && <a href='#scroll'> <span className='bg-black px-1 py-2  text-center rounded-xl hover:bg-white'>👇🏿</span></a>}
               </span>
               
-              <div style={{ 
+              <div ref={index === selectQuestion.length-1?scrollRef:null} style={{ 
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       fontSize: '16px',
       lineHeight: '28px',
       fontWeight: 400
-    }} className='  line-height-[28px] text-[16px] tracking-normal font-normal   text-left bg-[#2f2f2f] p-4 rounded-2xl float-left clear-both w-2/3'>
-                {item.ans}
+    }} className={`  line-height-[28px] text-[16px] tracking-normal font-normal   text-left bg-[#2f2f2f] p-4 rounded-2xl float-left clear-both w-2/3`}>
+                
+          { selectData &&     <RenderAiText selectData={selectData[index]} scrollTo={index === selectData.length-1?"scroll":null} />}
               </div>
-            
+           
             </div>
           );
         })}
       </div>
     </div>
+   
+
+   </>
 }
 
 
-     <div className='text-lime-600  text-sm lg:text-base absolute top-6 right-[40%] p-10 '>{msg}</div>
-        <div className=" text-lg text-white " >
-            <h1 className="p-2 px-6 font-bold">ChatGpt <span className="text">3.5  </span></h1>
+     <div className='text-lime-600  text-sm lg:text-base fixed z-50 top-6 right-[40%] p-10 '>{msg}</div>
+        <div className=" text-lg  " >
+            <h1 className="p-2 px-6 font-bold text-white">ChatGpt <span className="  text ">7.<span className='text-[#ba7bcd]'>O</span>  </span></h1>
         </div>
 
          <div className="flex justify-center flex-col ">
             <div className="pt-72 lg:pt-36 flex flex-col justify-center">
 
                <div className=""> <img className="w-9  bg-white rounded-md  m-auto" src={img.value}  alt='img-of-gpt'></img> </div>
-               <div> <h2 className="text-white font-bold text-xl pt-4 text-center">How can I help you today ?</h2></div>
+               <div> <h2 className=" text-white font-bold text-xl pt-4 text-center">How can I help you today ?</h2></div>
 
             </div>
              
@@ -161,20 +199,24 @@ GenAi(userQuestion,geminiPrompt,setData ,setIndi)
         <div className="media text-center mb-7  bg-[#212121] border bordergpt  w-full sm:w-1/2 m-auto rounded-l-2xl rounded-r-2xl mt-0 sm:mt-16">
 
   
-  <form onSubmit={handleSubmit}>
+  
         <textarea
+        ref={userInput}
         className='out p-1 met  w-4/5 text-white bg-[#212121]  rounded-lg  rounded-r-xl  pt-2 pb-0 mt-1 no-scrollbar'
         rows="1" cols="3"
           type="text"
           name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+        
+          //onChange={(e) => setName(e.target.value)}
           placeholder='Ask me Anything About me '
           autoComplete="on"
           required
         />
-        <button className=' bg-white p-3 mb-1 mt-1 rounded-xl hover:bg-black hover:text-white text-xs md:text-sm mr-0 md:mr-3 float-right ' type="submit" onClick={()=>handleAsk()}>Ask me</button>
-      </form>
+    {   !indicate ? <button  type='submit' className=' bg-white p-3 mb-1 mt-1 rounded-xl hover:bg-black hover:text-white text-xs md:text-sm mr-0 md:mr-3 float-right ' onClick={()=>{ handleAsk();}}  >Ask me</button>
+       : <button type="submit"  className=' hover:cursor-wait p-3 mb-1 mt-1 rounded-xl text-xs md:text-sm mr-0 md:mr-3 float-right shadow-2xl animate-pulse bg-gray-700 text-white'   >.....</button>
+    }
+    
+     
 
 </div>
 
