@@ -196,8 +196,8 @@ function keypressed(e){
         </div>
 
 
-        <div className="media text-center mb-7  bg-[#212121] border bordergpt  w-full sm:w-1/2 m-auto rounded-l-2xl rounded-r-2xl mt-0 sm:mt-16">
-
+        <div className=" relative media text-center mb-7  bg-[#212121] border bordergpt  w-full sm:w-1/2 m-auto rounded-l-2xl rounded-r-2xl mt-0 sm:mt-16">
+<span className= 'text-xs text-white absolute right-0 top-[-2px ] z-50 p-[1px] rounded-l-md bg-black'>Beta✨</span>
   
   
         <textarea
