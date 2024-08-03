@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { category } from "../constantCategory"
 
 import { memo } from "react"
+import { sendResponse } from "./helper"
 const RenderAiText=memo( ({selectData , scrollTo})=>{
  
    const [getData,setgetData] =useState(null)
@@ -19,6 +20,7 @@ useEffect(()=>{
             
       if(selectData.toLowerCase().trim().includes(item.categ.toLowerCase().trim())){
           // console.log(item.categ)
+          sendResponse(selectData+" "+item.description)
               return item
             }
     })

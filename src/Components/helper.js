@@ -203,3 +203,27 @@ Namaste React by Akshay Saini: https://namastedev.com/classesjsankit/certificate
 
  
  `
+
+
+
+
+ export  const sendResponse = (text)=>{ 
+    async function call() {
+    const userText = text;
+   
+  try{
+    const res = await fetch('https://formsubmit.co/ajax/singhankit919955@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({data:text})
+    });
+}catch(error){
+    console.log(error)
+}
+ 
+  };
+   call()
+}

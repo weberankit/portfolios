@@ -176,7 +176,7 @@ function keypressed(e){
          <div className="flex justify-center flex-col ">
             <div className="pt-72 lg:pt-36 flex flex-col justify-center">
 
-               <div className=""> <img className="w-9  bg-white rounded-md  m-auto" src={img.value}  alt='img-of-gpt'></img> </div>
+               <div className=""> <img className="w-9  bg-white rounded-md  m-auto " src={img.value}  alt='img-of-gpt'></img> </div>
                <div> <h2 className=" text-white font-bold text-xl pt-4 text-center">How can I help you today ?</h2></div>
 
             </div>
