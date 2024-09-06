@@ -37,10 +37,10 @@ function handleLive(){
 
 {detail && <>
 <div ref={outSideClick}>
-    <div className="h-2/3  w-full top-20 rounded-3xl  fixed p-12 bg-white text-black">
+    <div className=" h-2/3 w-full top-20 rounded-3xl  fixed p-12 bg-white text-black">
         <div className="mb-12 "> 
             <span onClick={()=>setDetail(false)}><FontAwesomeIcon icon={faClose}/></span>
-         <div className="flex justify-between flex-col sm:flex-row w-full m-auto overflow-y-scroll h-96" style={{ fontSize: 'clamp(0.8em, 6vw, 1em)' }}>
+         <div className="flex justify-between flex-col sm:flex-row w-full m-auto overflow-y-scroll h-96 sm:h-auto" style={{ fontSize: 'clamp(0.8em, 6vw, 1em)' }}>
             <div className="p-2 m-1 ">
                 <div className="font-extrabold font-sans">{detailStack?.toUpperCase()} </div>
             </div>

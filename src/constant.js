@@ -1,9 +1,9 @@
  export const myProject  = [
 
-    {videoId:"x8yrp6m",
-    playId:"x8cx20",
-    title:"Daily-Life PDF/Text Problem Solver AiSummarization, Dictionary, Translate 📑",
-    description:"whenever you get stuck, simply select the text and ask AI for help, look it up in the dictionary, or translate it instantly.",
+    {videoId:"x959cca",
+    playId:"x8omt4",
+    title:"The First All in One PDF/Text Problem Solver AiSummarization, Dictionary, Translate 📑 with AI-suggested Videos",
+    description:"whenever you get stuck, simply select the text and ask AI for help, look it up in the dictionary, or translate it instantly and also Ai-suggested videos.",
     subDescription:"This is not a clone project. ,When I was in my 2nd year of college🏫, I had the idea 💡 to build this, but at that time, I didn't have enough knowledge📖.Finally, my dreams come true. USED FIREBASE FOR BACKEND AND REACTJS FRONTEND",
     firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
     secBtn:"https://github.com/weberankit/AiPdf",
@@ -11,7 +11,7 @@
     fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
     detailStack:"Reactjs   Gemini API  Microsoft API  Translate API firebase   TailwindCss   ReduxToolkit   React-router-dom ",
     detailinfo:` 'AiPdf' : Developed an innovative web app providing unique AI-driven functionalities including text summarization, dictionary definitions, and language translation within PDF documents Features:
-
+the best part - it analyize your text topic by using Ai and then search videos from youtube,you can play or search more also. 
 AiSearch: Easy search functionality just select text and also you can ask follow-up questions. 🔍❓ 
 
 ASK Dictionary 📙: Understands five words simultaneously. 📚🔤
@@ -30,6 +30,49 @@ Free: 🤩 as You can use your key to run this web functionalities, it's 100% fr
 🌙🚀 Dark mode is also enabled.`
 
 },
+
+
+
+
+{videoId:"x959d60",
+    playId:"x8omv4",
+    title:"the News web App ",
+    description:"News web app which  show live videos and all playlist videos",
+    subDescription:"  Enabled shorts video and show all videos  of channel  and move to yt after 10 seconds",
+    firstBtn:"#",
+    secBtn:"https://github.com/weberankit/mike",
+    thirdBtn:"https://newsredmike.vercel.app/",
+    
+    fourthBtn:"#",
+    detailStack:"Youtube data v3 api , reactjs , tailwind css",
+    detailinfo:` created website which show all channel latestvideos
+      🔑 Key features:
+    
+    🌕shorts : without shorts youtube pi build shorts like container
+    🌕filter : showd latest video without mix of shorts video
+    🌕moved : to yutube after playing 10 seconds .
+    
+    📌 latest:it show  most latest videos at top
+    📌 videos: it provide other videos suggestion.
+    📌 Prevention 🔥 from unwanted API calls.
+    📌 Reusability: The same components are used as standard practice.
+    📌 Standard code: The code follows standard practices.
+    d.
+    
+   
+    💡 Supporting:
+    
+    Clean code.
+    Prevention of unwanted API calls.
+    Use of the same component.
+    Code divided into chunks.`
+    },
+
+
+
+
+
+
 
 
 

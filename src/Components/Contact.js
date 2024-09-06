@@ -1,11 +1,79 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { addData, addQuestion } from "../utils/DataSlice"
+import { useEffect ,useState} from "react"
+
 const Contact=()=>{
+    const dispatch=useDispatch()
+   
+
+    useEffect(()=>{
+ dispatch(addQuestion("close"));dispatch(addData("close"))
+    },[])
+
+    const [msg, setMsg] = useState(null);
+  
+    function handleSent(text) {
+      let firstInterval;
+      let secondInterval;
+      async function call() {
+        const userText = text;
+        firstInterval = setTimeout(() => {
+          setMsg("Your message was sent");
+          secondInterval = setTimeout(() => {
+            setMsg("");
+          }, 3000);
+        }, 700);
+        const res = await fetch('https://formsubmit.co/ajax/codingank@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({ data: text })
+        });
+        clearInterval(firstInterval);
+        clearInterval(secondInterval);
+        setMsg("");
+      };
+      call();
+    }
+  
+    const [formData, setFormData] = useState({
+      name: '',
+      phone: '',
+      message: '',
+      email: '',
+    });
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      const dataString = JSON.stringify(formData);
+      handleSent(dataString);
+      setFormData({
+        name: '',
+        phone: '',
+        message: '',
+        email: '',
+      });
+    };
+
+
+
+
+
     return(
 <>
 <Link to={"/"}> <div className="text-white text-center font-bold text-sm bg-red-600 rounded-lg p-3 py-2 inline-block ">Home</div></Link> 
-<div className="text-white">
-    <div className="flex justify-center flex-col m-auto w-3/4 ">
+<div className="text-white flex flex-col md:flex-row md:m-2">
+
+
+    <div className="flex justify-center flex-col m-auto w-[95%] md:w-1/2 ">
         <div className="pt-24"><img className="w-40 rounded-3xl" src="Ankitkr.jpg" alt="userimg"></img>
          <p className="p-2 pb-0 font-bold ">Hi,I am  Ankit Kumar</p>
          <h4>😊💼 💖 to - FreeLance | Frontend-Work/job | Open Source</h4>
@@ -15,7 +83,7 @@ const Contact=()=>{
 
      <div className="pt-5 font-semibold text-sm">
         <p className="font-extrabold font-sans">About my work: </p>
-       <p className="font-serif ">
+       <p className="font-serif line-clamp-4 ">
 
 What's new in my project? Lots of projects are available
 
@@ -34,6 +102,24 @@ Technical skill: ReactJS, JavaScript , PWA( progressive web app) , TailwindCSS, 
 </p>
      </div>
 
+
+
+
+     
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div className="pt-4">
         <p className="font-extrabold">contact me:🌐codingank@gmail.com</p>
   <div> 
@@ -51,6 +137,82 @@ Technical skill: ReactJS, JavaScript , PWA( progressive web app) , TailwindCSS, 
    
 
     </div>
+
+
+<div className=" mt-4 w-[95%] md:w-1/3">
+
+      <div className="flex items-center justify-center min-h-screen bg-[#212121]">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-lg p-8 bg-black rounded-lg shadow-md"
+        >
+          <h2 className="mb-6 text-2xl font-semibold text-center text-white">Contact Me</h2>
+          
+          <div className="mb-4 ">
+            <label className="block mb-2 text-sm font-medium " htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full px-3 text-black py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          <div className="mb-4 ">
+            <label className="block mb-2 text-sm font-medium " htmlFor="phone">Phone Number (Optional)</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border text-black border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div className="mb-4 ">
+            <label className="block mb-2 text-sm font-medium " htmlFor="email">Email ID</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full text-black px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          <div className="mb-6 ">
+            <label className="block mb-2 text-sm font-medium text-black" htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+              rows="4"
+              required
+            />
+          </div>
+          <p className="text-white">
+        {msg && msg}
+      </p>
+          <button
+            type="submit"
+            className="w-full px-4 py-2 text-black bg-gray-400 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+</div>
+
+
 </div>
 
 

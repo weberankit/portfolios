@@ -4,8 +4,16 @@ import { mySkill } from "../constant"
 import { Link } from "react-router-dom"
 import SkillBg from "./SkillBg"
 //import ProjectBg from "./ProjectBg"
+import { useDispatch } from "react-redux"
+import { addData, addQuestion } from "../utils/DataSlice"
+import { useEffect } from "react"
 const Skill=()=>{
+    const dispatch=useDispatch()
+   
 
+    useEffect(()=>{
+ dispatch(addQuestion("close"));dispatch(addData("close"))
+    },[])
 
 
     return(

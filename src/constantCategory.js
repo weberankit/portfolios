@@ -21,7 +21,7 @@ export const category = [
   },
   {
     categ: "Personal-information ",
-    description: "I(Ankit) enjoys tackling technology challenges and is open to Frontend Work, freelance work. He emphasizes security, accessibility, and optimization in frontend engineering. Contact him at codingank@gmail.com or visit his portfolio sections",
+    description: "I(Ankit) enjoys tackling technology challenges and is open to Frontend Work, freelance work. Ankit emphasizes reactjs frontend work , accessibility, and optimization in frontend engineering. Contact him at codingank@gmail.com or visit his portfolio sections",
     img1: "https://ucarecdn.com/a1363005-45f7-404b-bddd-74ddab49a04a/linkedin.png",
     link: "https://www.linkedin.com/in/ankitkrs/"
   },
@@ -33,7 +33,7 @@ export const category = [
   },
   {
     categ: "Projects",
-    description: "Ankit developed AiPdf, an app offering AI-driven summarization and translations for PDFs, and a PWA Netflix Web App with multilingual support and Reddit-like comments. These projects showcase his skills in creating user-friendly features.",
+    description: "Ankit developed AiPdf, an app offering AI-driven summarization and translations for PDFs,the Redmike news show web app and  a PWA Netflix Web App with multilingual support and Reddit-like comments. These projects showcase his skills in creating user-friendly features. for others and more info check his project section",
     img1: "https://ucarecdn.com/dad3bd49-f1c2-43d8-a1ad-86d8b12b60b2/chrome_yH8JathZwd.png",
     link: "https://www.ankitkr.in/project"
   },
@@ -69,13 +69,13 @@ export const category = [
   },
   {
     categ: "irrev",
-    description: "Hi I am Ankit to get answer(only profession question allowed ) , click on button or try other question ",
+    description: " Ankit does not allow us to ans this question ONLY PROFESSIONAL question-related to Ankit allowed sorry , check his portfolio section ,Directly Ask him click on button to ask or try other question ",
     img1: "https://ucarecdn.com/11521580-ef9f-40e5-b981-37b90edac26f/Q9ur2axvnU.png",
     link: "mailto:codingank@gmail.com"
   },
   {
     categ: "resume",
-    description: "for privacy you have to get permision from Ankit to get this resume click on button",
+    description: " get his resume for more info , for privacy you have to get permision from Ankitt to get this resume click on button",
     img1: "https://ucarecdn.com/6f414751-ef9a-44a1-a4ca-e5b418dfabb5/resumes.png",
     link: "https://drive.google.com/file/d/1dlH-tTZA4WV88pft9lV3aCv6RKIAvyhU/view?usp=drive_link"
   }

@@ -58,3 +58,39 @@ body{
             width: 100%; /* Sets the background color to red for elements with the class .media */
         }
     }
+
+
+
+
+
+    .loader{
+        text-align: center;
+        font-size: 20px;
+        color: #222121;
+        background-color: #212121;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        position: relative;
+      }
+      .loader:after{
+        content: '---------------------------------------------------------';
+        position: relative;
+        z-index: 5;
+      }
+      .loader:before{
+        content: '';
+        height: 6px;
+        border: 1px solid;
+        border-radius: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
+        background-size: 0% auto;
+        animation: 6s lineGrow linear infinite;
+      }
+      
+      @keyframes lineGrow {to {  background-size: 100% auto}}
+      
+
