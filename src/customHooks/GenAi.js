@@ -42,9 +42,9 @@ export const GenAi=(question,userInput,setIndi,setError,dispatch,addData)=>{
             const result = await model.generateContent(prompt);
             const response = await result.response;
             const text = response.text();
-            console.log(text,response)
+           // console.log(text,response)
            if(text){
-            console.log("hi i am rounning")
+           // console.log("hi i am rounning")
             
             dispatch(addData(text))
            // setData((prev)=>[...prev,{ans:text}])

@@ -20,7 +20,7 @@ const Contact=()=>{
       async function call() {
         const userText = text;
         firstInterval = setTimeout(() => {
-          setMsg("Your message was sent");
+          setMsg("Your message sent . Thanks ");
           secondInterval = setTimeout(() => {
             setMsg("");
           }, 3000);

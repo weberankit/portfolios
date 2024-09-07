@@ -6,7 +6,7 @@ import Project from './Components/Project';
 import Skill from './Components/Skill';
 import Contact from './Components/Contact';
 import Error from "./Components/Error"
-import { useContext ,createContext,useState } from 'react';
+import { useContext ,createContext,useState,useCallback,useEffect } from 'react';
 import { Provider } from 'react-redux';
 import AppSlice from './utils/AppSlice';
 ///context is created
@@ -20,6 +20,28 @@ import AppSlice from './utils/AppSlice';
 function App() {
 //now acces context
 const context=useContext(myContext)
+
+const callBackToUnLoad=useCallback(toLoad,[])
+function toLoad() {
+  document.getElementById("loading-overlay").style.display = "none";
+}
+// Hide the loading indicator when the page has fully loaded
+window.addEventListener("load", callBackToUnLoad);
+
+useEffect(()=>{
+
+// Hide the loading indicator when the page has fully loaded
+//to ensure 100% 
+document.getElementById("loading-overlay").style.display = "none";
+
+
+
+
+//removing it when unmounted --
+
+
+return(()=>window.removeEventListener("load",callBackToUnLoad))
+},[])
 
 
 

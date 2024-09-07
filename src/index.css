@@ -94,3 +94,16 @@ body{
       @keyframes lineGrow {to {  background-size: 100% auto}}
       
 
+      @keyframes slideFromRight {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+      .animate-slide-from-up {
+        animation: slideFromRight 1s ease-out forwards;
+      }
+      

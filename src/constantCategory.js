@@ -69,7 +69,7 @@ export const category = [
   },
   {
     categ: "irrev",
-    description: " Ankit does not allow us to ans this question ONLY PROFESSIONAL question-related to Ankit allowed sorry , check his portfolio section ,Directly Ask him click on button to ask or try other question ",
+    description: "please ask another question, Ankit does not allow us to ans this question ONLY PROFESSIONAL question-related to Ankit allowed sorry , check his portfolio section ,Directly Ask him click on button to ask or try other question ",
     img1: "https://ucarecdn.com/11521580-ef9f-40e5-b981-37b90edac26f/Q9ur2axvnU.png",
     link: "mailto:codingank@gmail.com"
   },

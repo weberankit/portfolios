@@ -17,7 +17,56 @@
     <title>Ankitkr</title>
     
   </head>
+  <style>
+    @keyframes loadingAnimation {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+  </style>
   <body>
+    <div id="loading-overlay" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays on top */
+">
+  <div style="
+    text-align: center; /* Center align text and bar */
+  ">
+    <p style="
+      color: white; 
+      font-size: 44px; 
+      margin-bottom: 20px;
+    "><img style="width: 110px ;border-radius: 20%; " src="https://ucarecdn.com/5a833d75-b6fd-4381-886b-58e4bcdecc92/SyPaf3YoJj.png">
+    </p>
+    <div id="loading-indicator" style="
+      width: 100%; /* Adjust width as needed */
+      height: 10px; /* Adjust height as needed */
+      background-color: rgb(255, 58, 58); /* Base color for the bar */
+      border-radius: 5px; /* Rounded corners */
+      overflow: hidden; /* Clip overflowing content */
+     
+    ">
+      <div id="progress-bar" style="
+        width: 0%; /* Initial width for the progress bar */
+        height: 100%; /* Full height of the bar */
+        background-color: #fff0f0; /* Progress color */
+        animation: loadingAnimation 1s linear infinite; /* Animation definition */
+       
+      ">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     
