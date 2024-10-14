@@ -7,7 +7,7 @@ export const category = [
 
   {
     categ: "introduction",
-    description: "I am frontend developer specializing in ReactJS, JavaScript, PWA, and TailwindCSS. He focuses on security, web accessibility, and optimization in web development. Ankit actively contributes to open-source projects and enjoys learning new technologies.",
+    description: "I am frontend developer specializing in ReactJS, JavaScript,Nextjs ,TypeScript, PWA,ShadCn-Ui and TailwindCSS. He focuses on security, web accessibility, and optimization in web development. Ankit actively contributes to open-source projects and enjoys learning new technologies.",
     img1: "https://ucarecdn.com/a1363005-45f7-404b-bddd-74ddab49a04a/linkedin.png",
     link: "https://www.linkedin.com/in/ankitkrs/"
   },
