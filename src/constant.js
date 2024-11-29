@@ -2,15 +2,15 @@
 
     {videoId:"x959cca",
     playId:"x8omt4",
-    title:"The First All in One PDF/Text Problem Solver AiSummarization, Dictionary, Translate 📑 with AI-suggested Videos",
-    description:"whenever you get stuck, simply select the text and ask AI for help, look it up in the dictionary, or translate it instantly and also Ai-suggested videos.",
+    title:"The First All in One PDF/Text Problem Solver AiSummarization, Dictionary, Translate 📑  with AI-suggested Videos",
+    description:"whenever you get stuck, simply select the text and ask AI for help, look it up in the dictionary,and generate MCQ for any pdf and also Ai-suggested videos.",
     subDescription:"This is not a clone project. ,When I was in my 2nd year of college🏫, I had the idea 💡 to build this, but at that time, I didn't have enough knowledge📖.Finally, my dreams come true. USED FIREBASE FOR BACKEND AND REACTJS FRONTEND",
     firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
     secBtn:"https://github.com/weberankit/AiPdf",
     thirdBtn:"https://aipdf.ankitkr.in/",
     fourthBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",
     detailStack:"Reactjs   Gemini API  Microsoft API  Translate API firebase   TailwindCss   ReduxToolkit   React-router-dom ",
-    detailinfo:` 'AiPdf' : Developed an innovative web app providing unique AI-driven functionalities including text summarization, dictionary definitions, and language translation within PDF documents Features:
+    detailinfo:` 'AiPdf' :  Developed an innovative web app providing unique AI-driven functionalities including text summarization, dictionary definitions, and language translation within PDF documents Features:
 the best part - it analyize your text topic by using Ai and then search videos from youtube,you can play or search more also. 
 AiSearch: Easy search functionality just select text and also you can ask follow-up questions. 🔍❓ 
 
