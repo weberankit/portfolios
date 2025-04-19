@@ -1,6 +1,7 @@
 import {useState,useEffect,useRef} from "react"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faClose } from "@fortawesome/free-solid-svg-icons"
+import {motion} from "framer-motion"
 
 const ProjectInfo=({data})=>{
     const{ videoId , playId , title , description ,subDescription,firstBtn,secBtn,thirdBtn,fourthBtn,detailStack,detailinfo} = data
@@ -77,6 +78,29 @@ return (
        </div>
 
       {detail && (
+        <motion.div
+        className="modal-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: detail ? 1 : 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={()=>setDetail(false)}
+      >
+        <motion.div
+          className="modal-content"
+          initial={{ scale: 0.5 }}
+          animate={{ scale: detail ? 1 : 0.5 }}
+          transition={{ duration: 0.3 }}
+        >
+
+
+
+
+
+
+
+
+
+
         <div className="fixed inset-0 bg-black/90  flex items-center justify-center z-[2000]">
           <div ref={outSideClick} className="bg-gray-900 ...">
           <div className="  rounded-3xl font-serif text-sm  p-12 bg-white text-black h-80 overflow-scroll">
@@ -95,6 +119,10 @@ return (
     </div>
           </div>
         </div>
+
+
+        </motion.div>
+        </motion.div>
       )}
     </div>
   )
