@@ -36,26 +36,28 @@ callRandom()
 return(()=>clearInterval(timer))
 },[])
 
-return(
-<>
-<div className="w-screen aspect-video   absolute text-white  bg-gradient-to-r from-black top-0 ">
-    <div className="bg-gradient-to-l from-black p-2">
-  <Link to={"/"}> <div className="text-white text-center font-base sm:font-bold text-xs  sm:text-sm bg-red-600 rounded-lg p-1 sm:p-3 py-2 inline-block fixed">Home</div></Link> 
-  <p className={` ${ind.mainColor} ml-12 sm:ml-24 bg-black font-bold p-2 rounded-lg text-xs sm:text-sm fixed`}>{ind.main} <span className={`${ind.subColor}`}> {ind.sub}</span> </p>
-{
-    myProject.map((item,index)=><ProjectInfo key={index} data={item}/>)
-}
+return (
+  <div className="relative z-10 container mx-auto px-4 py-12">
+    <div className="mb-8 flex items-center justify-between ">
+      <Link to="/" className="bg-red-600 hover:bg-red-700 ... px-4 py-1 rounded-sm font-serif text-white">
+        Home
+      </Link>
+      
+      <div className="bg-black/50 p-3 rounded-lg backdrop-blur-sm text-white">
+        <p className={`...`}>
+          {ind.main} 
+          <span className={`...`}>{ind.sub}</span>
+        </p>
+      </div>
+    </div>
 
- 
- 
-
-
-
-</div>
-
-
-</div>
-</>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
+      {myProject.map((item, index) => (
+        <ProjectInfo key={index} data={item} />
+      ))}
+    </div>
+  </div>
 )
+
 }
 export default ProjectDetails

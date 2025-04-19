@@ -3,19 +3,13 @@ import ProjectBg from "./ProjectBg"
 import ProjectDetails from "./ProjectDetails"
 import { useDispatch } from "react-redux"
 import { addData, addQuestion } from "../utils/DataSlice"
-
-const Project=()=>{
-    const dispatch=useDispatch()
-   
-
-    useEffect(()=>{
- dispatch(addQuestion("close"));dispatch(addData("close"))
-    },[])
-    return(
-        <>
-<ProjectBg/>
-<ProjectDetails/>
-        </>
+const Project = () => {
+    // Existing code remains same
+    return (
+      <div className="relative min-h-screen overflow-hidden">
+        <ProjectBg />
+        <ProjectDetails />
+      </div>
     )
-}
-export default Project
+  }
+  export default Project

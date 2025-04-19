@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 //import { sendResponse } from "../Components/helper";
 // ...
-
+//import {promptsSimpleAi} from "../constantCategory"
 
 const safetySettings = [
   {
@@ -25,18 +25,19 @@ const safetySettings = [
 ];
 
 
-export const GenAi= async(question,userInput,setIndi,setError,dispatch,addData)=>{
-    const apiKey=process.env.REACT_APP_2ndGemini;
+export const GenAiForNormalResponse=(question,userInput,setgetData,setStatus,dispatch,addData)=>{
+    const apiKey=process.env.REACT_APP_API_KEY;
    const genAI = new GoogleGenerativeAI(apiKey);
   
   async  function apiCall(){
         try{
+            setStatus("Dude you have asked unMatchable Question -- now let me show you Ankit powers")
             // For text-only input, use the gemini-flash-model
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", safetySettings });
            // const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
           
             const prompt = `
-          ${question} ${userInput?.current?.value }
+          ${question} ${userInput }
               `
           //console.log(prompt ,"prompt")
             const result = await model.generateContent(prompt);
@@ -45,22 +46,26 @@ export const GenAi= async(question,userInput,setIndi,setError,dispatch,addData)=
            // console.log(text,response)
            if(text){
            // console.log("hi i am rounning")
-            
-            dispatch(addData(text))
+            console.log(text)
+         //--  dispatch(addData(text))
            // setData((prev)=>[...prev,{ans:text}])
-          setIndi(false)
-          setError(null)
-     if( text !=="irrev" )  { userInput.current.value=""}
-          return text
+         //--    setIndi(false)
+       //--      setError(null)
+        // userInput.current.value="" 
+        
+      setgetData(text)
           
            } 
           
      }catch(error){
-           setIndi(false)
-           setError(`something went wrong(No personal question please ) Try to ask the same question in a different way and if error continue then please inform me`)
+        setStatus("not able to fetch data")
+         //--     setIndi(false)
+        //--      setError(`something went wrong(No personal question please ) Try to ask the same question in a different way and if error continue then please inform me`)
            console.log(error)
-           dispatch(addData("error"))
+        //--      dispatch(addData("error"))
            userInput.current.value="" 
+          }finally{
+            setStatus(null)
           }
 
 
@@ -72,7 +77,7 @@ export const GenAi= async(question,userInput,setIndi,setError,dispatch,addData)=
 
     }
 
-    return await apiCall();  
- 
+apiCall()
+
 }
 

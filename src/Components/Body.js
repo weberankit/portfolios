@@ -12,7 +12,7 @@ import { addData, addQuestion } from '../utils/DataSlice';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import ShowCard from  "./ShowCard"
-
+import { motion } from 'framer-motion';
 const Body=()=>{
   
 const [msg, setMsg] = useState("");
@@ -99,7 +99,7 @@ useEffect(()=>{
 
 let isSubmitting = false;
 //isubmiting is not necessary is not important to use here
-const handleAsk=()=>{
+const handleAsk= async ()=>{
  // console.log(userInput.current.value.trim().length)
   if(isSubmitting ||  userInput?.current?.value.trim().length==0){
     alert("please ask question ")
@@ -115,7 +115,7 @@ console.log("tgis is bef")
 //console.log(userInput.current.value) 
 //to indicate
 setIndi(true)
-GenAi(question,userInput,setIndi,setError, dispatch,addData)
+ await GenAi(question,userInput,setIndi,setError, dispatch,addData)
 
  }
  
@@ -136,7 +136,13 @@ function keypressed(e){
 }
 
   return(
-        <>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 2 }}
+  >
+        <div className="max-w-[1700px] mx-auto px-4">
   { selectQuestion?.length>0 && <>   <div  className={`  p-2 fixed bg-[#212121] font-serif  h-96 overflow-y-scroll mx-auto w-full`}>     
       <div className='w-full md:w-1/2 m-auto ' >
       {<button className='bg-red-600 rounded-lg text-white font-serif p-1 px-2 fixed' onClick={()=>{dispatch(addQuestion("close"));dispatch(addData("close"))}}>close</button>}
@@ -230,7 +236,9 @@ function keypressed(e){
 
 
          </div>
-        </>
+        </div>
+
+        </motion.div>
     )
 }
 export default Body
