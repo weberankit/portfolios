@@ -1,8 +1,55 @@
  export const myProject  = [
 
+{videoId:null,
+  playId:null,
+  title:"Extension:Job-Apply problem solver" ,
+  description:"Apply for a job just hoveronanywebsite email ,send button appear click on it email will send",
+  subDescription:"by this anyone can apply just have to connect email and send email with no effort" ,
+  firstBtn:"https://www.linkedin.com/posts/ankitkrs_software-ai-activity-7295649179433844736-wc8r?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQW07kBrD6F6dPUEpkHPtdxYnHaTpTY-_M",
+  secBtn:null,
+  thirdBtn:"https://chromewebstore.google.com/detail/sender/jajcmmflohnabceihilchpeelikeakji",
+  fourthBtn:"https://www.linkedin.com/posts/ankitkrs_software-ai-activity-7295649179433844736-wc8r?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQW07kBrD6F6dPUEpkHPtdxYnHaTpTY-_M",
+  detailStack:"vanialla  Javascript, css",
+  detailinfo:`💡 The Problem:
+Tired of sending the same email to multiple companies every day? 😩
+Opening Gmail, copy-pasting, attaching files—it’s boring and time-consuming!
+
+✅ The Solution:
+
+This Chrome Extension makes job applications super fast & easy! 🚀
+✨ What It Can Do for You:
+🔹 One-Click Email Sending – Just hover & click! 📩
+🔹 Track Your Applied Jobs – Never forget where you applied. 📊
+🔹 Privacy First – Your data never leaves your browser. 🔒
+🔹 Attach Files Instantly – No more manual uploads. 📎
+🔹 Custom Email Formatting – Add bold, italic, and more! ✍️
+🔹 Manual Email Input – If auto-detection misses an email, just add it! 🛠️"`
+,
+link:"https://ucarecdn.com/16069647-9a6a-49c2-b357-dd20185b402c/gIsbVj0jT21.png"
+}
+,
+{videoId:null,
+    playId:null,
+    title:"Ai-Search Based Influencers" ,
+    description:"company project-Influencers marketing and campaign Listing ",
+    subDescription:"Dashboard where campaign register and influcenrs data manage" ,
+    firstBtn:"https://www.linkedin.com/posts/ankitkrs_javascript-ai-activity-7318272877785423872-0Z44?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQW07kBrD6F6dPUEpkHPtdxYnHaTpTY-_M",
+    secBtn:null,
+    thirdBtn:null,
+    fourthBtn:"https://www.linkedin.com/posts/ankitkrs_javascript-ai-activity-7318272877785423872-0Z44?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQW07kBrD6F6dPUEpkHPtdxYnHaTpTY-_M",
+    detailStack:"Reactjs , Tailwindcss, chartjs,Interceptor",
+    detailinfo:"This is basically an Influence marketing project which manages data of 70k and smooths the process of Influence and Authorization, authentication,automation, management, campaign, heavy custom forms",
+    link:"https://ucarecdn.com/5e46826b-7d39-4c10-b809-b5d394a2ffb5/chrome_zcyS6kzlRk.png"
+
+
+}
+
+,
+
+
     {videoId:"x959cca",
     playId:"x8omt4",
-    title:"The First All in One PDF/Text Problem Solver AiSummarization, Dictionary, Translate 📑  with AI-suggested Videos",
+    title:"AiPdf With Ai suggestedvideos,",
     description:"whenever you get stuck, simply select the text and ask AI for help, look it up in the dictionary,and generate MCQ for any pdf and also Ai-suggested videos.",
     subDescription:"This is not a clone project. ,When I was in my 2nd year of college🏫, I had the idea 💡 to build this, but at that time, I didn't have enough knowledge📖.Finally, my dreams come true. USED FIREBASE FOR BACKEND AND REACTJS FRONTEND",
     firstBtn:"https://www.linkedin.com/feed/update/urn:li:activity:7197476098664800256/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2Bj%2FAH1xOTHOpePSRMcs%2FYA%3D%3D",

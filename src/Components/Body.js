@@ -136,7 +136,7 @@ function keypressed(e){
 }
 
   return(
-        <>
+        <div className="max-w-[1700px] mx-auto px-4">
   { selectQuestion?.length>0 && <>   <div  className={`  p-2 fixed bg-[#212121] font-serif  h-96 overflow-y-scroll mx-auto w-full`}>     
       <div className='w-full md:w-1/2 m-auto ' >
       {<button className='bg-red-600 rounded-lg text-white font-serif p-1 px-2 fixed' onClick={()=>{dispatch(addQuestion("close"));dispatch(addData("close"))}}>close</button>}
@@ -230,7 +230,7 @@ function keypressed(e){
 
 
          </div>
-        </>
+        </div>
     )
 }
 export default Body

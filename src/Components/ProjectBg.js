@@ -1,22 +1,15 @@
-const ProjectBg=()=>{
-//const array=["WkM07RJs9-E","WkM07RJs9-E","WkM07RJs9-E"]
-//const randomPick=Math.floor(Math.random()*array.length)
-//console.log(randomPick)
 
-    return(
-                
-<>
-
-
-<div >
-<img src="lib.jpg" className="w-screen aspect-video fixed h-screen"></img>
-</div>
-
-
- 
-
-
-</>
-    )
+const ProjectBg = () => {
+  return (
+    <div className="fixed inset-0 z-0">
+      <img 
+        src="lib.jpg" 
+        className="w-full h-full object-cover animate-kenburns"
+        alt="Background" 
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/20" />
+    </div>
+  )
 }
-export default ProjectBg
+  export default ProjectBg
+  
